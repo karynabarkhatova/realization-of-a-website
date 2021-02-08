@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    500 Error
+{% endblock title %}
+
+{% block h1 %}
+{% endblock h1 %}
+
+{% block menu %}
+{% endblock %}
+
+{% block content %}
+
+<img src="{{ url_for('static', filename='images/oops.jpeg') }}" alt="oops" class="error_img">
+<br>
+
+<h2> Internal server error is occured </h2>
+
+<h3> don't worry it's not your fault </h3>
+
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
