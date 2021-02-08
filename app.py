@@ -49,5 +49,11 @@ def error_404(e):
     return (output, 404)
 
 
+@app.errorhandler(500)
+def error_500(e):
+    output = render_template('500err.html')
+    return (output, 500)
+
+
 if __name__ == '__main__':
     app.run()
