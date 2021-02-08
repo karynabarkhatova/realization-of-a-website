@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About Dr.House
+{% endblock title %}
+
+{% block h1 %}
+<h1>ABOUT </h1>
+{% endblock h1 %}
+
+{% block content %}
+    <img src="{{ url_for('static', filename='images/drhouse.jpg') }}" alt="Photo of Doctor House">
+
+        <p class="quote"><i> &#171 {{ quote }} &#187 </i></p>
+
+        <p> {{ biography }} </p>
+      
+{% endblock content%}
+
+
+
+
+
+
+
+
+

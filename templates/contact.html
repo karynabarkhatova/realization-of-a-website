@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Contact page
+{% endblock title %}
+
+{% block body %}
+<body class="page-3">
+{% endblock body %}
+
+{% block h1 %}
+<h1>HOW TO CONTACT </h1>
+{% endblock h1 %}
+
+{% block content %}
+<form action="/contact/" method="POST">
+
+    Name:<br>
+    <input type="text" name="firstname"><br><br>
+    Last Name:<br>
+    <input type="text" name="lastname"> <br><br>
+    Email:<br>
+    <input type="email" name="email"> <br> <br>
+    Topic:<br>
+    <select name="topic">
+        <option> Make an appointment</option>
+        <option> Online consultation</option>
+        <option> Enrollment in a sarcasm course</option>
+        <option> Just wanna piss you off</option>
+    </select>
+    <br><br>
+    Your message:<br>
+    <textarea name="message" cols="50" rows="6"></textarea> <br><br>
+
+    To get a response via email: <input name='response' type="checkbox" checked=""><br>
+
+    <br>
+    
+    <button type="reset">Clean form</button>
+    <button type="submit">Submit</button>
+
+</form>
+
+{% endblock content %}

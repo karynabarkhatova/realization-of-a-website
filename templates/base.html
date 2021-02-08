@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html">
+        <meta name="description" content="Some information about Dr.Gregory House and how to contact him">
+        <meta name="keywords" content="Doctor House, doctor, biography, surgery, clinic, Gregory House">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+        <title>  
+            {% block title %}
+                Some title..
+            {% endblock title %}
+        </title>
+    
+    </head>
+
+{% block body %}
+<body>
+{% endblock body%}
+
+    {% block menu %}
+        <menu>
+            <li>
+                <a href='/'>SHORT INFO</a>
+                <a href='/about'>ABOUT</a>
+                <a href='/contact'>HOW TO CONTACT</a>
+            </li>
+        </menu>
+    {% endblock menu %} 
+
+
+    {% block h1 %}
+        MUST BE H1 TITLE
+    {% endblock h1 %}
+
+    <br>
+
+    {% block content %}
+        MUST BE A CONTENT
+    {% endblock content %}
+
+    <br>
+    <br>
+    
+    {% block footer %}
+    <footer>Doctor Gregory House, 2021 &copy;</footer>
+    {% endblock footer %}
+    
+</body>
+
+</html>

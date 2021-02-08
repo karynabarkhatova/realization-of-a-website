@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    404 Error
+{% endblock title %}
+
+{% block h1 %}
+{% endblock h1 %}
+
+{% block menu %}
+{% endblock %}
+
+{% block content %}
+
+<img src="{{ url_for('static', filename='images/oops.jpeg') }}" alt="oops" class="error_img">
+<br>
+
+<h2> I didn't find this page </h2>
+
+<h3> check the url address, probably you've made a mistake </h3>
+
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
