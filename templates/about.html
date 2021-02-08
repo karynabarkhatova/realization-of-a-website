@@ -11,7 +11,7 @@
 {% block content %}
     <img src="{{ url_for('static', filename='images/drhouse.jpg') }}" alt="Photo of Doctor House">
 
-        <p class="quote"><i> &#171 {{ quote }} &#187 </i></p>
+        <p class="quote"><i> &#171 {{ quote|capitalize }} &#187 </i></p>
 
         <p> {{ biography }} </p>
       

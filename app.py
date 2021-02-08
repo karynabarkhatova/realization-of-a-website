@@ -13,7 +13,7 @@ def index():
 @app.route('/about/', methods=['GET', 'POST'])
 def about():
     file = open('static/biography.txt')
-    string = "I don't ask why patients lie, I just assume they all do."
+    string = "i don't ask why patients lie, i just assume they all do."
     output = render_template("about.html", biography=file.read(), quote=string)
     return output
 
