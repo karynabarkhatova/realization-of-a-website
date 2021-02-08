@@ -42,10 +42,12 @@ def contact():
     output = render_template("contact.html")
     return output
 
+
 @app.errorhandler(404)
 def error_404(e):
     output = render_template('404err.html')
     return (output, 404)
+
 
 if __name__ == '__main__':
     app.run()
