@@ -1,6 +1,6 @@
 ### **1.** First of all you need to clone this repository
 ```python3
-git clone https://github.com/karynabarkhatova/flask-handlers.git
+git clone https://github.com/karynabarkhatova/realization-of-a-website.git
 ```
 ### **2.** Second step is installing a virtual environment
 ```python3
